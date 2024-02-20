@@ -33,7 +33,7 @@ function Home() {
         <Card.Text>
          {product?.description.slice(0,50)}
         </Card.Text>
-        <h5>{product?.price}</h5>
+        <h5>${product?.price}</h5>
        
        <div className='d-flex  justify-content-between'>
        <Button onClick={()=>dispatch(addToWishlist(product))} variant="outline" className='btn ' ><i class="fa-solid fa-heart" style={{color: '#d22014'}}></i> </Button>
